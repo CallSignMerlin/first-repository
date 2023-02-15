@@ -38,6 +38,5 @@ o.forEach((x) => {
 })
 
 console.log(o)
-
-let sum = o.reduce((a, b) =>  a.age + b.age);
+let sum = o.reduce((a, b) =>  { return a + b.age }, 0);
 console.log(sum);
